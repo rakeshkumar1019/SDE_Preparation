@@ -1,4 +1,15 @@
 // https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+// Time Complexity: O(n)
+
+// Auxiliary Space: O(1) as no extra space was needed.
+
+// Total number of comparisons: Different for even and odd n, see below: 
+
+//        If n is odd:    3*(n-1)/2  
+//        If n is even:   1 Initial comparison for initializing min and max, 
+//                            and 3(n-2)/2 comparisons for rest of the elements  
+//                       =  1 + 3*(n-2)/2 = 3n/2 -2
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
