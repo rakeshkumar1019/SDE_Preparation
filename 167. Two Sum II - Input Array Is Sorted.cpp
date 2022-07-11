@@ -8,15 +8,16 @@ public:
             int left=0;
             int right=n-1;
             while(left<right){
-                if(numbers[left]+numbers[right]== target){
+            int addTwoElement=numbers[left]+numbers[right];
+                if(addTwoElement== target){
                     res.push_back(left+1);
                     res.push_back(right+1);
                     break;
                 }
-                if(numbers[left]+numbers[right]>target){
+                if(addTwoElement>target){
                     right--;
                 }
-                if(numbers[left]+numbers[right]<target){
+                if(addTwoElement<target){
                     left++;
                 }
             }
